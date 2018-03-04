@@ -4,7 +4,8 @@
 
 :root{
 	--main-color:AliceBlue;
-	--dark-color:#141936;
+	--louis-color:#450061;
+	--lisa-color:#2aa49d;
 	--max-width:1000px;
 }
 
@@ -25,25 +26,23 @@ header{
 
 
 /********************HEADER (CONTAINER A)*********************************/
-.headlogo{
-	padding:10px;
+.headlogo img{
 	display:block;
 	margin:0 auto;
-	width: 20vh;
-	margin-bottom:30px;
+	width: 100px;
+	padding:30px;
 
 }
-
 .conA{
 	display: flex;
 	align-items:center;
 	justify-content:center;
 	text-align: center;
-	height:90vh;
+	height:95vh;
 	min-height: 450px;
 	background-position: center;
 	background-size: cover;
-	background-image: url("../img/header.jpg")
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url("../img/header.jpg");
 }
 
 .conA .container {
@@ -61,29 +60,33 @@ header{
 	font-size: 15vw;
 	font-family: Helvetica,sans-serif;
 	color:white;
-	text-shadow: 1px 2px 3px #ddd;
+	text-shadow: 1px 2px 3px black;
 }
 
-.con p{
-	margin-top: 0;
+.conA h2{
+	color:white;
+	margin-top: 30px;
 	margin-bottom: 0;
-	font-size:18px;
+	font-size:24px;
 }
 
 .conA a{
 display:inline-block;
 margin-top:20px;
 padding: 10px 30px;
-border: solid 3px currentColor;
+border: solid 1px currentColor;
 border-radius: 6px;
-background-color: var(--dark-color);
+background-color:var(--louis-color);
+background-color:#450061;
 color: #fff;
 text-decoration: none;
 }
 
 .conA a:hover{
-	background-image:linear-gradient(
-	rgba(255,255,255,0.2),rgba(255,255,255,0.2));
+	background-color: var(--lisa-color);
+	background-color: #2aa49d; 
+	color:white;
+	transition:0.5s ease;
 }
 
 /*********************ABOUT (CONTAINER B)*******************/
@@ -112,7 +115,7 @@ text-decoration: none;
 	line-height: 2em;
 	border-radius: 50%;
 	text-align: center;
-	background-color: #ddd;
+	background-color: var(--louis-color);
 	color:#fff;
 }
 
@@ -211,10 +214,24 @@ text-decoration: none;
 
 /********************CONTACT (CONTAINER E)*********************************/
 
+
+
+.conE .text{
+	padding:20px;
+}
+
 .conE h1{
 	text-align: center;
 	padding:50px;
 }
+
+
+.conE h2{
+	margin-top:0;
+	margin-bottom: 10px;
+	font-size:20px;
+}
+
 .conE .container{
 	padding:30px;
 	max-width:var(--max-width);
@@ -223,34 +240,57 @@ text-decoration: none;
 	margin-right: auto;
 
 }
+	.conE img{
+		display:block;
+		margin: 0 auto;
+		height:200px;
+		width:200px;
+		border-radius: 50%
+	}
 
-.conE .photo{
-	background-image: url("../img/contactimage.jpg");
-	min-height: 300px;
-	width:300px;
-	height:450px;
-	background-position: center;
-	background-size: cover;
-}
-
-.conE p{
-	margin-top:0;
-	margin-bottom:20px;
-	font-size:14px;
-	line-height:1.8;
-	opacity:0.8;
-}
-
-.conE .text{
-	box-shadow: 1px 2px 3px #ddd;
+.conE .text {
+			line-height: 1.8;
 }
 
 /********************FOOTER*********************************/
 
 footer{
 	height:150px;
-	background-color: #141936;
+	background-color: var(--louis-color);
+	background-color:#450061;
 }
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    font-size:40px;
+    text-align: center;
+    background: var(--lisa-color);
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: var(--louis-color);
+    transition: 0.5s ease;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+
+
+
+
+
 
 /********************MEDIA QUERIES*********************************/
 @media(min-width:768px){
@@ -308,22 +348,15 @@ footer{
 
 	.conE .container {
 		display:flex;
+		align-items: center;
 		max-width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.conE .photo {
-		flex:3;
-	}
-
 	.conE .text{
-		flex:2;
+		flex:3;
 		padding: 20px;
-	}
-
-	.headlogo{
-		width:18%;
 	}
 
 }/********************END OF MEDIA QUERIES (MIN-WIDTH)*********************************/
