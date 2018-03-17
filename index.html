@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<title> Louis and Lisa | Freelance web service</title>
 </head>
@@ -28,7 +29,7 @@
 		<h1>Need a website?</h1> 
 				<h2>We've got you covered.</h2>
 				<br>
-		<a href ="#">Our Services</a>
+		<a href ="#" class ="ourservices">Our Services</a>
 	</div>
 	</section>
 
@@ -38,19 +39,19 @@
 					<h1>Our Services</h1>
 
 		<div class = "container">
-			<div class = "text">
+			<div class = "text" data-aos="fade-up" data-aos-duration="700">
 				<span class ="fa fa-code icon"></span>
 			<h2>Code</h2>
 			<p>We are passionate about coding - We can create from a single page applications to fully detailed websites. Whatever your needs, we are here to support and help reach your goals.</p>
 		</div>
 
-			<div class = "text">
+			<div class = "text" data-aos="fade-up" data-aos-duration="1400">
 			<span class ="fa fa-pencil icon"></span>
 			<h2>UX/UI</h2>
 			<p>Before we code, we go into in depth research and perform multiple user testings before we deliver the final product, so you are sure your website will appeal to your target market.</p>
 		</div>
 
-			<div class = "text">
+			<div class = "text" data-aos="fade-up" data-aos-duration="2100">
 			<span class ="fa fa-desktop icon"></span>
 			<h2>Graphic Design</h2>
 			<p>Not only we design for the web, we can also help you with your graphic design needs. Ranging from logo identity to posters, our designs will be sure to stand out from the rest.</p>
@@ -65,7 +66,7 @@
 			<h1> Work examples</h1>
 				<div class = "container">
 
-					<div class = "photo" alt = "one fat bird"></div>
+					<div class = "photo" alt = "one fat bird" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" ></div>
 					<div class = "text">
 						<h2>One Fat Bird Digital Ordering App</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis temporibus, voluptates sunt. Eligendi aliquid dolore laboriosam exercitationem ut. Autem odit ea labore inventore, velit cum neque voluptatem fuga dolore.</p>
@@ -75,7 +76,7 @@
 
 	<section class = "conD">
 		<div class = "container">
-			<div class = "photo" alt = "kiwi app"></div>
+			<div class = "photo" alt = "kiwi app" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"></div>
 			<div class = "text">
 				<h2>Kiwi Travel Rental App</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis temporibus, voluptates sunt. Eligendi aliquid dolore laboriosam exercitationem ut. Autem odit ea labore inventore, velit cum neque voluptatem fuga dolore.</p>
@@ -87,19 +88,22 @@
 
 	<section class = "conE">
 		<h1>About Us</h1>
-		<div class = "container">
+
+		<div class = "container" data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+
 			<img src= "img/louis.jpg" alt = "louis">
 			<div class = "text">
 			<h2>Louis Kelly</h2>
-			<p>Description goes here</p>
+			<p>Louis is the guy you want when it comes to javascipt and jQuery - He is a logical thinker who can quickly come up with solutions based on your needs. Friendly, approchable, and dedicated to deliver the best result. </p>
 			</div>
-	</div>
-		<div class = "container">
+		</div>
+
+		<div class = "container" data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="800">
 
 			<img src= "img/lisa.jpg" alt = "Lisa">
 			<div class = "text">
 			<h2>Lisa Pearson</h2>
-			<p>Lisa has a background in graphic design and is in charge of the HTML and CSS. In her spare time she likes to practice her coding skills with self-directed projects, and likes to go out for coffee with friends.</p>
+			<p>Lisa is a graphic design graduate from AUT and loves to create beautiful websites with HTML and CSS. In her spare time she likes to practice her coding skills with self-directed projects, such as 100 days of code. She loves a good challenge, and always hard at work (she won't say no to a coffee meet-up!).</p>
 			</div>
 		</div>
 		
@@ -129,8 +133,9 @@
 
 <!-- ********** SCRIPT********** -->
 
-<script src="https://use.fontawesome.com/ec32a4b21b.js"></script>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/ec32a4b21b.js"></script>	
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script type="text/javascript" src = "js/script.js"></script>
 </body>
 </html>
