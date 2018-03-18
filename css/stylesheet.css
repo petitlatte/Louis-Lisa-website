@@ -1,13 +1,4 @@
-/********************GENERAL CSS*********************************/
-
 @charset "UTF-8";
-
-:root{
-	--main-color:AliceBlue;
-	--louis-color:#450061;
-	--lisa-color:#2aa49d;
-	--max-width:1000px;
-}
 
 body{
 	padding:0;
@@ -22,7 +13,6 @@ header{
 	z-index:100;
 	width:100%;
 }
-
 
 
 /********************HEADER (CONTAINER A)*********************************/
@@ -47,7 +37,6 @@ header{
 
 .conA .container {
 	padding:30px;
-	max-width:var(--max-width);
 	max-width: 1000px;
 	margin-left:auto;
 	margin-right: auto;
@@ -76,14 +65,12 @@ margin-top:20px;
 padding: 10px 30px;
 border: solid 1px currentColor;
 border-radius: 6px;
-background-color:var(--louis-color);
 background-color:#450061;
 color: #fff;
 text-decoration: none;
 }
 
 .conA a:hover{
-	background-color: var(--lisa-color);
 	background-color: #2aa49d; 
 	color:white;
 	transition:0.5s ease;
@@ -115,7 +102,7 @@ text-decoration: none;
 	line-height: 2em;
 	border-radius: 50%;
 	text-align: center;
-	background-color: var(--louis-color);
+	background-color: #450061;
 	color:#fff;
 }
 
@@ -165,7 +152,6 @@ text-decoration: none;
 
 .conC .container{
 	padding:30px;
-	max-width:var(--max-width);
 	max-width: 1000px;
 	margin-left:auto;
 	margin-right: auto;
@@ -234,7 +220,6 @@ text-decoration: none;
 
 .conE .container{
 	padding:30px;
-	max-width:var(--max-width);
 	max-width: 1000px;
 	margin-left:auto;
 	margin-right: auto;
@@ -252,11 +237,40 @@ text-decoration: none;
 			line-height: 1.8;
 }
 
+.conE a{
+	 color:#2aa49d;
+	 font-weight: bold;
+	text-decoration: none;
+}
+
+.conE a:hover{
+	color: #450061;
+	transition: 0.5s ease;
+}
+
+.contact{
+	margin-top: 20px;
+	margin-bottom:20px;
+	padding:20px;
+	text-align: center;
+}
+
+.contact span {
+	display:inline-block;
+	margin-bottom:20px;
+	font-size:2.2em;
+	width:2em;
+	line-height: 2em;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #450061;
+	color:white;
+}
+
 /********************FOOTER*********************************/
 
 footer{
 	height:150px;
-	background-color: var(--louis-color);
 	background-color:#450061;
 }
 
@@ -270,7 +284,7 @@ footer{
     height: 50px;
     font-size:40px;
     text-align: center;
-    background: var(--lisa-color);
+    background: #2aa49d;
     color: white;
     cursor: pointer;
     border: 0;
@@ -280,7 +294,7 @@ footer{
     opacity: 0;
 }
 #back-to-top:hover {
-    background: var(--louis-color);
+    background: #450061;
     transition: 0.5s ease;
 }
 #back-to-top.show {
@@ -357,6 +371,18 @@ footer{
 	.conE .text{
 		flex:3;
 		padding: 20px;
+	}
+
+	.contact-wrap {
+		display:flex;
+	}
+
+	.contact {
+		flex: 1;
+	}
+
+	.contact:first-child{
+		margin-right:20px;
 	}
 
 }/********************END OF MEDIA QUERIES (MIN-WIDTH)*********************************/

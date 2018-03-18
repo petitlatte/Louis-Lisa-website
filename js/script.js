@@ -7,7 +7,6 @@ $(".ourservices").click(function() {
 });
 
 
-
 //back to top button
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
